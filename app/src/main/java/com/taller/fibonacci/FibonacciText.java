@@ -53,7 +53,8 @@ public class FibonacciText extends AppCompatActivity {
         btn_fib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), )
+                Intent intent = new Intent(view.getContext(), Web.class);
+                startActivity(intent);
             }
         });
     }
