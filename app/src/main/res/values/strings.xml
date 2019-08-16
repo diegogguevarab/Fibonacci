@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fibonacci</string>
+    <string name="fibonacci_picture">Fibonacci picture</string>
+    <string name="calcular">Calcular</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+    <string name="pos">Posición</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+</resources>
