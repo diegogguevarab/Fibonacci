@@ -8,6 +8,7 @@
     <string name="zero">0</string>
     <string name="one">1</string>
     <string name="factorial">Factorial</string>
+    <string name="paises">Países</string>
     <string-array name="numeros">
         <item>1</item>
         <item>2</item>
