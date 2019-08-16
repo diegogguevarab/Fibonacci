@@ -22,6 +22,7 @@ public class FibonacciText extends AppCompatActivity {
         final LinearLayout text_lay = findViewById(R.id.txt_lay);
         Button btn_calc = findViewById(R.id.btn_calcTxt);
         Button btn_ant = findViewById(R.id.btn_antTxt);
+        Button btn_fib = findViewById(R.id.fib_img);
         btn_calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +48,12 @@ public class FibonacciText extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), FibonacciList.class);
                 startActivity(intent);
+            }
+        });
+        btn_fib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), )
             }
         });
     }
