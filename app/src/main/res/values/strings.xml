@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">Fibonacci</string>
     <string name="fibonacci_picture">Fibonacci picture</string>
-    <string name="calcular">Calcular</string>
+    <string name="calcular">Fibonacci</string>
     <string name="siguiente">Siguiente</string>
     <string name="anterior">Anterior</string>
     <string name="pos">Posición</string>
     <string name="zero">0</string>
     <string name="one">1</string>
+    <string name="factorial">Factorial</string>
+    <string-array name="numeros">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 </resources>
