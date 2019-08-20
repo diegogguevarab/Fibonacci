@@ -9,6 +9,8 @@
     <string name="one">1</string>
     <string name="factorial">Factorial</string>
     <string name="paises">Países</string>
+    <string name="facttxt">Factorial</string>
+    <string name="factImg">Logo Factorial</string>
     <string-array name="numeros">
         <item>1</item>
         <item>2</item>
