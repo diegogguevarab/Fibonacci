@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,20 +24,23 @@ public class FibonacciText extends AppCompatActivity {
         Button btn_calc = findViewById(R.id.btn_calcTxt);
         Button btn_ant = findViewById(R.id.btn_antTxt);
         Button btn_fib = findViewById(R.id.fib_img);
+        Button btn_pais = findViewById(R.id.btn_paises);
+        Button btn_fact = findViewById(R.id.btn_fact);
+        final Spinner spin_num = findViewById(R.id.spinner_num);
         btn_calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int t1=0,fib=1, t2;
+                int t1 = 0, fib = 1, t2;
                 text_lay.removeAllViews();
-                for (int i = 0; i < Integer.parseInt(pos.getText().toString())-1; i++) {
-                    if(i<=1){
+                for (int i = 0; i < Integer.parseInt(pos.getText().toString()) - 1; i++) {
+                    if (i <= 1) {
                         TextView textView = new TextView(view.getContext());
                         textView.setText(Integer.toString(i));
                         text_lay.addView(textView);
                     }
-                    t2=t1+fib;
-                    t1=fib;
-                    fib=t2;
+                    t2 = t1 + fib;
+                    t1 = fib;
+                    fib = t2;
                     TextView textView = new TextView(view.getContext());
                     textView.setText(Integer.toString(fib));
                     text_lay.addView(textView);
@@ -57,5 +61,21 @@ public class FibonacciText extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_pais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Paises.class);
+                startActivity(intent);
+            }
+        });
+        btn_fact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Factorial.class);
+                intent.putExtra("num",Integer.parseInt((String)spin_num.getSelectedItem()));
+                startActivity(intent);
+            }
+        });
+
     }
 }
